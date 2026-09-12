@@ -10,7 +10,7 @@
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/lucide@0.294.0/dist/umd/lucide.js"></script>
   <!-- Google Fonts: Space Grotesk & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -123,25 +123,17 @@
       </p>
 
       <div class="mt-8 flex flex-wrap items-center gap-4">
-        <a href="#projects" class="px-6 py-3.5 rounded-xl bg-white hover:bg-slate-200 text-black font-semibold text-sm transition-all flex items-center gap-2 shadow-xl shadow-white/5">
+        <a href="#projects" class="px-6 py-3.5 rounded-xl bg-white hover:bg-slate-200 text-black font-semibold text-sm transition-all flex items-center justify-center gap-2 shadow-xl shadow-white/5">
           <span>Explore Works</span>
           <i data-lucide="arrow-down" class="w-4 h-4"></i>
         </a>
-        <a href="https://github.com/atul-k01" target="_blank" class="px-6 py-3.5 rounded-xl border border-slate-800 hover:border-slate-600 bg-slate-900/60 hover:bg-slate-800 text-white font-medium text-sm transition-all flex items-center gap-2">
+        <a href="https://github.com/atul-k01" target="_blank" class="px-6 py-3.5 rounded-xl border border-slate-800 hover:border-slate-600 bg-slate-900/60 hover:bg-slate-800 text-white font-medium text-sm transition-all flex items-center justify-center gap-2">
           <i data-lucide="github" class="w-4 h-4"></i>
           <span>GitHub</span>
         </a>
-        <a href="https://www.linkedin.com/in/atul-kumar-7092bb248/" target="_blank" class="px-6 py-3.5 rounded-xl border border-slate-800 hover:border-slate-600 bg-slate-900/60 hover:bg-slate-800 text-white font-medium text-sm transition-all flex items-center gap-2">
+        <a href="https://www.linkedin.com/in/atul-kumar-7092bb248/" target="_blank" class="px-6 py-3.5 rounded-xl border border-slate-800 hover:border-slate-600 bg-slate-900/60 hover:bg-slate-800 text-white font-medium text-sm transition-all flex items-center justify-center gap-2">
           <i data-lucide="linkedin" class="w-4 h-4"></i>
           <span>LinkedIn</span>
-        </a>
-        <a href="mailto:atulranout13@gmail.com" class="px-6 py-3.5 rounded-xl border border-slate-800 hover:border-slate-600 bg-slate-900/60 hover:bg-slate-800 text-white font-medium text-sm transition-all flex items-center gap-2">
-          <i data-lucide="mail" class="w-4 h-4"></i>
-          <span>atulranout13@gmail.com</span>
-        </a>
-        <a href="tel:+918627886348" class="px-6 py-3.5 rounded-xl border border-slate-800 hover:border-slate-600 bg-slate-900/60 hover:bg-slate-800 text-white font-medium text-sm transition-all flex items-center gap-2">
-          <i data-lucide="phone" class="w-4 h-4"></i>
-          <span>+91 86278 86348</span>
         </a>
       </div>
 
@@ -197,10 +189,14 @@
               <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 border border-slate-700">AAR Distribution</span>
             </div>
           </div>
-          <div class="mt-6 pt-5 border-t border-slate-800/80 flex items-center gap-4 text-xs font-semibold text-purple-300">
+          <div class="mt-6 pt-5 border-t border-slate-800/80 flex flex-wrap items-center gap-4 text-xs font-semibold text-purple-300">
             <span>Published on Maven Central</span>
             <span>•</span>
             <span>Modular UI Architecture</span>
+            <a href="https://play.google.com/store/apps/details?id=com.snapcut.videoeditor&hl=en" target="_blank" class="ml-auto flex items-center gap-1 text-purple-300 hover:text-purple-200">
+              <span>Snapcut App (SDK integrated)</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
           </div>
         </div>
 
@@ -223,10 +219,10 @@
               <span class="text-xs px-2 py-0.5 rounded bg-slate-800 text-slate-300">Foreground Services</span>
             </div>
           </div>
-          <div class="mt-6 pt-4 border-t border-slate-800 text-xs font-semibold text-emerald-400 flex items-center gap-1">
+          <a href="https://play.google.com/store/apps/details?id=com.geoshift.fakegps&hl=en" target="_blank" class="mt-6 pt-4 border-t border-slate-800 text-xs font-semibold text-emerald-400 flex items-center gap-1 hover:text-emerald-300">
             <span>Published on Play Store</span>
             <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
-          </div>
+          </a>
         </div>
 
         <!-- Project 3: Zump Mobility Platform -->
@@ -249,8 +245,12 @@
               <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300">FCM Push</span>
             </div>
           </div>
-          <div class="mt-6 pt-4 border-t border-slate-800 text-xs text-slate-400">
-            Native Android • getzump.com
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+            <span>Native Android • Canada</span>
+            <a href="https://getzump.com/" target="_blank" class="text-sky-300 font-semibold flex items-center gap-1 hover:text-sky-200">
+              <span>getzump.com</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
           </div>
         </div>
 
@@ -274,9 +274,10 @@
               <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300">Bloc Pattern</span>
             </div>
           </div>
-          <div class="mt-6 pt-4 border-t border-slate-800 text-xs text-slate-400">
-            Deployed for Bharti Airtel Corporate Operations
-          </div>
+          <a href="https://play.google.com/store/apps/details?id=com.app.airtel_shield&hl=en" target="_blank" class="mt-6 pt-4 border-t border-slate-800 text-xs text-slate-400 flex items-center justify-between hover:text-rose-300">
+            <span>Deployed for Bharti Airtel Corporate Operations</span>
+            <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+          </a>
         </div>
 
         <!-- Project 5: Geo Camera - GPS Map Location (Wide horizontal strip) -->
@@ -499,21 +500,21 @@
           Got a project idea, open engineering position, or need custom SDK architecture? My inbox is always open.
         </p>
 
-        <div class="pt-4 flex flex-wrap items-center justify-center gap-4">
-          <a href="mailto:atulranout13@gmail.com" class="px-6 py-3 rounded-xl bg-sky-500 hover:bg-sky-400 text-black font-semibold text-sm transition-all flex items-center gap-2">
-            <i data-lucide="mail" class="w-4 h-4"></i>
-            <span>atulranout13@gmail.com</span>
+        <div class="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md mx-auto">
+          <a href="mailto:atulranout13@gmail.com" class="px-6 py-3 rounded-xl bg-sky-500 hover:bg-sky-400 text-black font-semibold text-sm transition-all flex items-center justify-center gap-2">
+            <i data-lucide="mail" class="w-4 h-4 shrink-0"></i>
+            <span>Email</span>
           </a>
-          <a href="tel:+918627886348" class="px-6 py-3 rounded-xl border border-slate-700 bg-slate-800/80 hover:bg-slate-700 text-white font-medium text-sm transition-all flex items-center gap-2">
-            <i data-lucide="phone" class="w-4 h-4"></i>
+          <a href="tel:+918627886348" class="px-6 py-3 rounded-xl border border-slate-700 bg-slate-800/80 hover:bg-slate-700 text-white font-medium text-sm transition-all flex items-center justify-center gap-2">
+            <i data-lucide="phone" class="w-4 h-4 shrink-0"></i>
             <span>+91 86278 86348</span>
           </a>
-          <a href="https://github.com/atul-k01" target="_blank" class="px-6 py-3 rounded-xl border border-slate-700 bg-slate-800/80 hover:bg-slate-700 text-white font-medium text-sm transition-all flex items-center gap-2">
-            <i data-lucide="github" class="w-4 h-4"></i>
+          <a href="https://github.com/atul-k01" target="_blank" class="px-6 py-3 rounded-xl border border-slate-700 bg-slate-800/80 hover:bg-slate-700 text-white font-medium text-sm transition-all flex items-center justify-center gap-2">
+            <i data-lucide="github" class="w-4 h-4 shrink-0"></i>
             <span>GitHub Profile</span>
           </a>
-          <a href="https://www.linkedin.com/in/atul-kumar-7092bb248/" target="_blank" class="px-6 py-3 rounded-xl border border-slate-700 bg-slate-800/80 hover:bg-slate-700 text-white font-medium text-sm transition-all flex items-center gap-2">
-            <i data-lucide="linkedin" class="w-4 h-4"></i>
+          <a href="https://www.linkedin.com/in/atul-kumar-7092bb248/" target="_blank" class="px-6 py-3 rounded-xl border border-slate-700 bg-slate-800/80 hover:bg-slate-700 text-white font-medium text-sm transition-all flex items-center justify-center gap-2">
+            <i data-lucide="linkedin" class="w-4 h-4 shrink-0"></i>
             <span>LinkedIn</span>
           </a>
         </div>
