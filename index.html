@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Atul Kumar | Mobile Application Engineer & SDK Architect</title>
-  
+  <meta name="description" content="Atul Kumar — Mobile Application Developer specializing in Native Android (Kotlin), Flutter, published Maven Central SDKs, and real-time telematics/navigation systems." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📱</text></svg>" />
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Lucide Icons -->
@@ -77,7 +79,7 @@
 
   <!-- Sticky Navbar -->
   <header class="fixed top-0 left-0 right-0 z-50 glass-nav">
-    <div class="max-w-6xl mx-auto px-6 h-18 py-4 flex items-center justify-between">
+    <div class="max-w-6xl mx-auto px-6 py-3.5 flex items-center justify-between">
       <a href="#" class="font-display font-bold text-xl tracking-tight flex items-center gap-2 group">
         <span class="w-8 h-8 rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-500 flex items-center justify-center text-black font-black text-sm group-hover:scale-105 transition-transform">AK</span>
         <span class="text-white group-hover:text-sky-400 transition-colors">atul<span class="text-sky-400">.dev</span></span>
@@ -91,7 +93,10 @@
         <a href="#contact" class="hover:text-white transition-colors">Contact</a>
       </nav>
 
-      <div class="flex items-center gap-3">
+      <div class="flex items-center gap-2">
+        <a href="tel:+918627886348" aria-label="Call Atul Kumar" class="w-9 h-9 hidden sm:flex rounded-lg border border-slate-800 hover:border-slate-600 bg-slate-900/60 hover:bg-slate-800 text-slate-300 hover:text-white items-center justify-center transition-all">
+          <i data-lucide="phone" class="w-4 h-4"></i>
+        </a>
         <a href="mailto:atulranout13@gmail.com" class="px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-lg bg-sky-500 hover:bg-sky-400 text-black transition-all flex items-center gap-1.5 shadow-lg shadow-sky-500/20">
           <i data-lucide="send" class="w-3.5 h-3.5"></i>
           <span>Hire Me</span>
@@ -126,9 +131,17 @@
           <i data-lucide="github" class="w-4 h-4"></i>
           <span>GitHub</span>
         </a>
+        <a href="https://www.linkedin.com/in/atul-kumar-7092bb248/" target="_blank" class="px-6 py-3.5 rounded-xl border border-slate-800 hover:border-slate-600 bg-slate-900/60 hover:bg-slate-800 text-white font-medium text-sm transition-all flex items-center gap-2">
+          <i data-lucide="linkedin" class="w-4 h-4"></i>
+          <span>LinkedIn</span>
+        </a>
         <a href="mailto:atulranout13@gmail.com" class="px-6 py-3.5 rounded-xl border border-slate-800 hover:border-slate-600 bg-slate-900/60 hover:bg-slate-800 text-white font-medium text-sm transition-all flex items-center gap-2">
           <i data-lucide="mail" class="w-4 h-4"></i>
           <span>atulranout13@gmail.com</span>
+        </a>
+        <a href="tel:+918627886348" class="px-6 py-3.5 rounded-xl border border-slate-800 hover:border-slate-600 bg-slate-900/60 hover:bg-slate-800 text-white font-medium text-sm transition-all flex items-center gap-2">
+          <i data-lucide="phone" class="w-4 h-4"></i>
+          <span>+91 86278 86348</span>
         </a>
       </div>
 
@@ -266,6 +279,92 @@
           </div>
         </div>
 
+        <!-- Project 5: Geo Camera - GPS Map Location (Wide horizontal strip) -->
+        <div class="md:col-span-12 bento-card rounded-2xl p-7 flex flex-col md:flex-row md:items-center gap-6">
+          <div class="w-14 h-14 shrink-0 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400">
+            <i data-lucide="camera" class="w-7 h-7"></i>
+          </div>
+          <div class="flex-1 space-y-3">
+            <div class="flex flex-wrap items-center gap-3">
+              <h3 class="font-display text-xl sm:text-2xl font-bold text-white">Geo Camera – GPS Map Location</h3>
+              <span class="px-3 py-1 text-[11px] font-semibold tracking-wider uppercase rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                Google Play Live
+              </span>
+            </div>
+            <p class="text-slate-300 text-sm leading-relaxed max-w-3xl">
+              Native Android geotagging camera that auto-stamps photos with GPS coordinates, address, altitude, compass direction, and timestamp. Ships with customizable stamp templates, DMS/decimal coordinate formats, and custom logo branding — built for field engineering, real estate, and travel documentation.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">Kotlin</span>
+              <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">CameraX</span>
+              <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">Geotagging</span>
+              <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">Fused Location</span>
+            </div>
+          </div>
+          <a href="https://play.google.com/store/apps/details?id=com.geocamera.gpsmaplocation&hl=en" target="_blank" class="shrink-0 px-5 py-3 rounded-xl border border-slate-700 bg-slate-800/80 hover:bg-slate-700 text-white text-sm font-medium transition-all flex items-center gap-2 w-fit">
+            <span>View on Play Store</span>
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <!-- Project 6: The Hotel Media -->
+        <div class="md:col-span-6 bento-card rounded-2xl p-7 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 text-[11px] font-semibold tracking-wider uppercase rounded-full bg-pink-500/20 text-pink-300 border border-pink-500/30">
+                Social & Business Network
+              </span>
+              <i data-lucide="star" class="w-6 h-6 text-pink-400"></i>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-white">The Hotel Media</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Native Android social platform connecting individuals and businesses. Built profile-based posting and stories, follow/unfollow graphs, private chat, and a two-sided review system where businesses can create events and promotions while users discover, rate, and engage with them.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">Kotlin</span>
+              <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">Clean MVVM</span>
+              <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">Social Feeds</span>
+              <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">Realtime Chat</span>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+            <span>thehotelmedia.com</span>
+            <a href="https://play.google.com/store/apps/details?id=com.thehotelmedia.android&hl=en" target="_blank" class="text-pink-300 font-semibold flex items-center gap-1 hover:text-pink-200">
+              <span>Play Store</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 7: My Dating Connection (MDC) -->
+        <div class="md:col-span-6 bento-card rounded-2xl p-7 flex flex-col justify-between">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 text-[11px] font-semibold tracking-wider uppercase rounded-full bg-red-500/20 text-red-300 border border-red-500/30">
+                Cross-Platform • Flutter
+              </span>
+              <i data-lucide="heart" class="w-6 h-6 text-red-400"></i>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-white">My Dating Connection (MDC)</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Cross-platform dating & social discovery app built with Flutter. Developed real-time chat with live-typing previews, interest-based match suggestions, nearby/global discovery, and profile privacy controls for a large, active user base.
+            </p>
+            <div class="flex flex-wrap gap-2 pt-1">
+              <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">Flutter</span>
+              <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">Provider</span>
+              <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">Realtime Messaging</span>
+              <span class="text-xs px-2.5 py-1 rounded bg-slate-800 text-slate-300 border border-slate-700">Matching Algorithms</span>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+            <span>mydatingconnection.com</span>
+            <a href="https://play.google.com/store/apps/details?id=com.fm.mdc.app&hl=en" target="_blank" class="text-red-300 font-semibold flex items-center gap-1 hover:text-red-200">
+              <span>Play Store</span>
+              <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+            </a>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -292,6 +391,7 @@
           <ul class="mt-5 space-y-3 text-sm text-slate-300 list-disc list-inside">
             <li>Designed, built, and shipped the <strong>Snapcut Video Editor SDK</strong> to Maven Central for third-party client integrations.</li>
             <li>Published <strong>GeoShift</strong> on Google Play, building custom route spoofing and Android Foreground Services.</li>
+            <li>Shipped <strong>Geo Camera – GPS Map Location</strong>, a geotagging camera app for field, real-estate, and travel documentation.</li>
             <li>Engineered <strong>Zump Mobility</strong> passenger and driver apps with Mapbox turn-by-turn guidance and live vehicle dispatch.</li>
             <li>Streamlined location feeds with sub-second latency using WebSockets, FCM, and Fused Location Provider.</li>
           </ul>
@@ -411,6 +511,10 @@
           <a href="https://github.com/atul-k01" target="_blank" class="px-6 py-3 rounded-xl border border-slate-700 bg-slate-800/80 hover:bg-slate-700 text-white font-medium text-sm transition-all flex items-center gap-2">
             <i data-lucide="github" class="w-4 h-4"></i>
             <span>GitHub Profile</span>
+          </a>
+          <a href="https://www.linkedin.com/in/atul-kumar-7092bb248/" target="_blank" class="px-6 py-3 rounded-xl border border-slate-700 bg-slate-800/80 hover:bg-slate-700 text-white font-medium text-sm transition-all flex items-center gap-2">
+            <i data-lucide="linkedin" class="w-4 h-4"></i>
+            <span>LinkedIn</span>
           </a>
         </div>
       </div>
