@@ -79,13 +79,13 @@
 
   <!-- Sticky Navbar -->
   <header class="fixed top-0 left-0 right-0 z-50 glass-nav">
-    <div class="max-w-6xl mx-auto px-6 py-3.5 flex items-center justify-between">
-      <a href="#" class="font-display font-bold text-xl tracking-tight flex items-center gap-2 group">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-3">
+      <a href="#" class="font-display font-bold text-lg sm:text-xl tracking-tight flex items-center gap-2 group shrink-0">
         <span class="w-8 h-8 rounded-xl bg-gradient-to-tr from-sky-500 to-indigo-500 flex items-center justify-center text-black font-black text-sm group-hover:scale-105 transition-transform">AK</span>
         <span class="text-white group-hover:text-sky-400 transition-colors">atul<span class="text-sky-400">.dev</span></span>
       </a>
 
-      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+      <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-medium text-slate-400">
         <a href="#about" class="hover:text-white transition-colors">About</a>
         <a href="#projects" class="hover:text-white transition-colors">Projects & SDKs</a>
         <a href="#experience" class="hover:text-white transition-colors">Experience</a>
@@ -93,14 +93,24 @@
         <a href="#contact" class="hover:text-white transition-colors">Contact</a>
       </nav>
 
-      <div class="flex items-center gap-2">
-        <a href="tel:+918627886348" aria-label="Call Atul Kumar" class="w-9 h-9 hidden sm:flex rounded-lg border border-slate-800 hover:border-slate-600 bg-slate-900/60 hover:bg-slate-800 text-slate-300 hover:text-white items-center justify-center transition-all">
-          <i data-lucide="phone" class="w-4 h-4"></i>
-        </a>
-        <a href="mailto:atulranout13@gmail.com" class="px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-lg bg-sky-500 hover:bg-sky-400 text-black transition-all flex items-center gap-1.5 shadow-lg shadow-sky-500/20">
-          <i data-lucide="send" class="w-3.5 h-3.5"></i>
+      <div class="relative flex items-center gap-2 shrink-0">
+        <button type="button" id="hireMeButton" aria-haspopup="true" aria-expanded="false"
+          class="px-3 sm:px-4 py-2 text-[11px] sm:text-xs font-semibold uppercase tracking-wider rounded-lg bg-sky-500 hover:bg-sky-400 text-black transition-all flex items-center gap-1.5 shadow-lg shadow-sky-500/20 whitespace-nowrap">
+          <i data-lucide="briefcase-business" class="w-3.5 h-3.5"></i>
           <span>Hire Me</span>
-        </a>
+          <i data-lucide="chevron-down" id="hireMeChevron" class="w-3.5 h-3.5 transition-transform"></i>
+        </button>
+
+        <div id="hireMeMenu" class="hidden absolute right-0 top-[calc(100%+0.6rem)] w-48 rounded-xl border border-slate-700/80 bg-slate-950/95 backdrop-blur-xl p-1.5 shadow-2xl shadow-black/40">
+          <a href="mailto:atulranout13@gmail.com" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">
+            <span class="w-8 h-8 rounded-lg bg-sky-500/10 text-sky-400 flex items-center justify-center"><i data-lucide="mail" class="w-4 h-4"></i></span>
+            <span><span class="block font-semibold">Email Me</span><span class="block text-[11px] text-slate-500">Start a conversation</span></span>
+          </a>
+          <a href="tel:+918627886348" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-slate-200 hover:bg-slate-800 hover:text-white transition-colors">
+            <span class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center"><i data-lucide="phone" class="w-4 h-4"></i></span>
+            <span><span class="block font-semibold">Call Me</span><span class="block text-[11px] text-slate-500">+91 86278 86348</span></span>
+          </a>
+        </div>
       </div>
     </div>
   </header>
@@ -528,8 +538,38 @@
   </footer>
 
   <script>
-    // Initialize Lucide Icons
     lucide.createIcons();
+
+    // Hire Me dropdown: Email or Call
+    const hireMeButton = document.getElementById('hireMeButton');
+    const hireMeMenu = document.getElementById('hireMeMenu');
+    const hireMeChevron = document.getElementById('hireMeChevron');
+
+    function closeHireMenu() {
+      hireMeMenu.classList.add('hidden');
+      hireMeButton.setAttribute('aria-expanded', 'false');
+      hireMeChevron.classList.remove('rotate-180');
+    }
+
+    hireMeButton.addEventListener('click', (event) => {
+      event.stopPropagation();
+      const isOpen = !hireMeMenu.classList.contains('hidden');
+      if (isOpen) {
+        closeHireMenu();
+      } else {
+        hireMeMenu.classList.remove('hidden');
+        hireMeButton.setAttribute('aria-expanded', 'true');
+        hireMeChevron.classList.add('rotate-180');
+      }
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!hireMeMenu.contains(event.target) && !hireMeButton.contains(event.target)) closeHireMenu();
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') closeHireMenu();
+    });
   </script>
 </body>
 </html>
